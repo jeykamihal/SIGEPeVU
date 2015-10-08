@@ -1,0 +1,390 @@
+/***************************************************************************
+*                                                                          *
+* contented6 - An open source xhtml/css website template by Contented      *
+* Designs.  You're free to modify it and use it for any purpose without    *
+* cost or obligation. We'd prefer that you leave the link to our website   *
+* in the footer but it's not required.                                     *
+*                                                                          *
+* If you have comments or questions, please contact us at                  *
+* http://www.ContentedDesigns.com. Thanks!                                 *
+*                                                                          *
+* Version: 1.01 (May 17, 2006)                                             *
+***************************************************************************/
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	color: #333333;
+	background-color:#FFFFFF;
+        font-family:Verdana,Tahoma,Arial,sans-serif;
+	font-size:83%;
+	margin:20px auto;
+	width:1360px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.highlight {
+	font-family:'Courier New',Verdana,Tahoma,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, 
+fieldset, address { margin:0.75em 0;}
+
+h1 {font-size:167%;}
+
+h2 {font-size:139%;}
+
+h3 {font-size:120%;}
+
+h4 {font-size:100%;}
+
+li, dd { 
+	margin-left:2em;
+}
+
+a {
+	color: #0066CC;
+	background-color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0000FF;
+	background-color: #E6ECFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*a {
+	color: #003d4c;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:hover {
+	color: #367889;
+	text-decoration:none;
+}
+a img {
+	border:none;
+}*/
+
+#header {
+	color: #FFFFFF;
+	background-color:#3366CC;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+
+#title {
+	color: #FFFFFF;
+	background-color:#3366CC;
+	font-size:200%;
+	font-weight: normal;
+	padding:10px 0px 0px 20px;
+	margin:0px 0px 0px 0px;
+	float:left;
+	width:1280px;
+}
+
+ul#nav {
+	clear:both;
+	float:left;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+	list-style: none;
+	width:100%;
+	color:#FFFFFF;
+	background-color:#3366CC;
+}
+
+ul#nav li {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+
+ul#nav li a {
+	display: block;
+	margin: 0px 2px 0px 0px;
+	padding: 5px 10px 5px 10px;
+	color: #FFFFFF;
+	background-color:#6699FF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+ul#nav li a:hover { 
+	border-bottom:3px solid #FFFFFF;
+}
+
+ul#nav a.selected { 
+	border-bottom:3px solid #FFFFFF;
+}
+
+#slogan {
+	color: #FFFFFF;
+	background-color:#6699FF;
+	width:1250px;
+	clear:both;
+	float:left;
+	font-size:100%;
+	font-style:normal;
+	font-weight: normal;
+	padding:4px 0px 2px 20px;
+	margin:6px 0px 0px 0px;
+}
+
+
+
+#maincontent {
+	font-size:100%;
+	padding:0px 0px 5px 0px;
+	margin:5px 10px 10px 20px;
+	width:1080px;
+	float:left;
+}
+
+#sidecontent {
+	font-family:Arial, sans-serif;
+	color: #333333;
+	background:#E6ECFF;
+	font-size:85%;
+	padding:5px 10px 10px 10px;
+	margin:15px 0px 15px 0px;
+	width:160px;
+	float:left;
+	border: #0066CC solid thin;
+}
+
+#sidecontent a {
+	color: #0066CC;
+	background:#E6ECFF;
+}
+
+#sidecontent a:hover {
+	color: #0000FF;
+	background: #D6DCDF;
+}
+
+#sidecontent h2 { margin:0.75em 0.25em 0.25em 0em;}
+
+#sidecontent ul { margin:0.25em 0.25em 0.25em 0.25em;}
+
+#sidecontent p { margin:0em 0em 0em 0em;}
+
+#nullblock {} /* Used to avoid IE jump on hover bug */
+
+#footer {
+	height:40px;
+	color:#333333;
+	background-color:#FFFFFF;
+	border-top:6px solid #6699FF;
+	font-size:85%;
+	width: 1280px;
+	clear:both;
+}
+
+#footer	a {
+	color:#0066CC;
+	background-color:#FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#footer	a:hover {
+	color:#0000FF;
+	background-color:#E6ECFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#copyrightdesign {
+	color:#666666;
+	background-color:#FFFFFF;
+	padding:5px 20px 5px 0px;
+	width: 580px;
+	float:left;
+}
+
+#footercontact {
+	color:#0066CC;
+	background-color:#FFFFFF;
+	padding:5px 0px 5px 0px;
+	float:right;
+}
+
+#footercontent a {
+	color: #0066CC;
+	background-color:#FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#footercontent a:hover {
+	color: #0000FF;
+	background-color: #E6ECFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* tables */
+/*
+table {  
+  width: 100%;   
+  border: 1px solid #003d4c; 
+  color:#333; 
+  background-color: #fff;
+  clear:both;    
+  padding: 0;
+  margin: 0 0 2em 0;
+  white-space: normal;
+}
+th {
+  background-color: #ccc;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #003d4c;
+  border-bottom: 1px solid #003d4c;
+  text-align: center;
+  padding:1px;
+}
+table tr td {
+  border-right: 1px solid #ccc;
+  padding:4px 4px;
+  vertical-align:top;
+  text-align: center;
+}
+table tr.altRow td {
+  background: #f4f4f4;
+}*/
+/** Tables cake.generic **/
+table {
+	border-right:0;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+th {
+	border:0;
+	border-bottom:2px solid #555;
+	text-align: left;
+	padding:4px;
+}
+th a {
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a.asc:after {
+	content: ' ⇣';
+}
+th a.desc:after {
+	content: ' ⇡';
+}
+table tr td {
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom:1px solid #ddd;
+}
+table tr:nth-child(even) {
+	background: #f9f9f9;
+}
+td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+table td.actions a {
+	margin: 0px 6px;
+	padding:2px 5px;
+}
+/* Paging */
+div.paging {
+	
+	background: #f4f4f4;
+	color: #333;
+	margin-bottom: 2em;
+}
+div.paging div.disabled {
+	color: #ddd;
+	display: inline;
+}
+div.paging span {
+}
+div.paging span.current {
+	color: #000;
+}
+div.paging span a {
+}
+/* Scaffold View */
+dl {
+	line-height: 2em;
+	margin: 0em 0em;
+	width: 100%;
+}
+dl .altrow {
+	background: #E6ECFF;
+}
+dt {
+	font-weight: bold;
+	padding-left: 4px;
+	vertical-align: top;
+}
+dd {
+	margin-left: 10em;
+	margin-top: -2em;
+	vertical-align: top;
+}
+.muestradatos_expediente_izq
+{
+    float: left;
+    height: 250px;
+    width: 540px;
+}
+.muestradatos_expediente_der
+{
+    float: right;
+    height: 250px;
+    width: 540px;
+}
+
+/* Menu para expedientes */
+ul#navexp {
+	color:#FFFFFF;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 6px 10px;
+	list-style: none;
+	text-align: center;
+	width:800px;
+}
+
+ul#navexp li {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+}
+
+ul#navexp li a {
+	display: block;
+	margin: 0px 2px 0px 0px;
+	padding: 5px 10px 5px 10px;
+	color: #FFFFFF;
+	background-color:#6699FF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+ul#navexp li a:hover { 
+	border-bottom:3px solid #FFFFFF;
+}
+
+ul#nav a.selected { 
+	border-bottom:3px solid #FFFFFF;
+}

@@ -1,0 +1,9 @@
+div#content {
+	padding: 0em 0em 5em 0; /* bottom padding for footer */
+}
+div#footer {
+	clear: both;
+}
+.b3a {
+	height: 100px;
+}

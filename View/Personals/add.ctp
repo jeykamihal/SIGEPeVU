@@ -1,0 +1,77 @@
+<div class="personals form">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1><?php echo __('Nuevo Personal'); ?></h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="actions">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Acciones</div>
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked">
+
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Lista Personals'), array('action' => 'index'), array('escape' => false)); ?></li>
+<!--                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Lista Comisions'), array('controller' => 'comisions', 'action' => 'index'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nueva Comision'), array('controller' => 'comisions', 'action' => 'add'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Lista Contratos'), array('controller' => 'contratos', 'action' => 'index'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nueva Contrato'), array('controller' => 'contratos', 'action' => 'add'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Lista Equipos'), array('controller' => 'equipos', 'action' => 'index'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nueva Equipo'), array('controller' => 'equipos', 'action' => 'add'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Lista Bonificacions'), array('controller' => 'bonificacions', 'action' => 'index'), array('escape' => false)); ?> </li>
+                            <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Nueva Bonificacion'), array('controller' => 'bonificacions', 'action' => 'add'), array('escape' => false)); ?> </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col md 3 -->
+        <div class="col-md-9">
+            <?php echo $this->Form->create('Personal', array('role' => 'form')); ?>
+
+            <div class="form-group">
+                <?php echo $this->Form->input('Apellido_Nombre', array('class' => 'form-control', 'placeholder' => 'Apellido Nombre'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('DNI', array('class' => 'form-control', 'placeholder' => 'DNI'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Legajo', array('class' => 'form-control', 'placeholder' => 'Legajo'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Clase', array('class' => 'form-control', 'placeholder' => 'Clase'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Cargo', array('class' => 'form-control', 'placeholder' => 'Cargo'));?>
+            </div>
+            <div class="form-group">
+                <!--?php echo $this->Form->input('Estado', array('class' => 'form-control', 'placeholder' => 'Estado'));?!-->
+                <?php echo $this->Form->input ('Estado', array('class' => 'form-control', 'placeholder' => 'Estado' )); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Localidad', array('class' => 'form-control', 'placeholder' => 'Localidad'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Obra', array('class' => 'form-control', 'placeholder' => 'Obra'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('comision_id', array('class' => 'form-control', 'placeholder' => 'Comision Id'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('Bonificacion', array('class' => 'form-control', 'placeholder' => 'Comision Id'));?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->submit(__('Guardar'), array('class' => 'btn btn-default')); ?>
+            </div>
+
+            <?php echo $this->Form->end() ?>
+
+        </div><!-- end col md 12 -->
+    </div><!-- end row -->
+</div>
